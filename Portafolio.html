@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Brayan Gutierrez Dinarte Portfolio</title>
+    <link rel="stylesheet" href="./Portafolio.css">
+    <script>
+        // Función para mostrar solo la sección correspondiente
+        function showSection(sectionId) {
+            // Ocultar todas las secciones
+            document.querySelectorAll('main > section').forEach(section => {
+                section.style.display = 'none';
+            });
+            // Mostrar la sección seleccionada
+            document.getElementById(sectionId).style.display = 'block';
+        }
+
+        // Mostrar la sección Home por defecto cuando se carga la página
+        window.onload = function() {
+            showSection('home-section');
+        };
+    </script>
+</head>
+<body>
+    <header>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <nav>
+            <div class="nav-left">
+                <span class="nav-logo">Brayan Gutiérrez</span>
+            </div>
+            <ul class="nav-center">
+                <li><a href="javascript:void(0)" onclick="showSection('home-section')">Home</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('portfolio-section')">Portfolio</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('about-section')">About</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('blog-section')">Blog</a></li>
+                <li><a href="javascript:void(0)" onclick="showSection('contact-section')">Contact</a></li>
+            </ul>
+            
+            <div class="nav-right">
+                <a href="./docs/CV Brayan Gutierrez Dinarte.pdf" class="download-cv" download="CV_Brayan_Gutierrez_Dinarte.pdf">Download CV</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Sección Home -->
+        <section id="home-section" class="hero-section">
+            <!-- Sección destacada -->
+            <section id="hero" class="hero-section">
+                <div class="hero-content">
+                    <h1>Hi, I'm Brayan a</h1>
+                    <h2>Computer Engineer</h2>
+                </div>
+            </section>
+            <!-- Introducción -->
+            <section id="intro" class="intro-section">
+                <h2>Discover what I can do?</h2>
+                <p>
+                    Welcome to my portfolio, a space where computer engineers come to life. Here, each project tells a story of innovation and problem solving. Ready to explore the future of technology?
+                </p>
+            </section>
+        </section>
+        <!-- Sección de portafolio -->
+        <section id="portfolio-section" class="portfolio-section" style="display: none;">
+            <h2>My Projects</h2>
+        
+            <div class="project-card">
+                <img src="./image/snakeIcon.jpg" alt="Snake Game Icon" class="project-image">
+                <div class="project-content">
+                    <h3>Snake Game</h3>
+                    <p>The snake game was a project made to compare two algorithms</p>
+                    <p>in two different programming languages DrRacket and Python.</p>
+                    <h4>Technologies</h4>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <img src="./image/PythonIcon.png" alt="Python" class="tech-icon">
+                            <p class="tech-label">Python</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/PycharmIcon.png" alt="Pycharm" class="tech-icon">
+                            <p class="tech-label">Pycharm</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/DrRacketIcon.png" alt="DrRacket" class="tech-icon">
+                            <p class="tech-label">DrRacket</p>
+                        </div>
+                    </div>                    
+                    <a href="https://github.com/BrayanD17/Snake-game" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./image/postcardIcon.jpg" alt="Postcard Icon" class="project-image">
+                <div class="project-content">
+                    <h3>Postcard generator </h3>
+                    <p>The postcard generator project was made with the objective of learning</p>
+                    <p>a little of the imperative paradigm and the importance of memory</p>
+                    <p>management in this type of languages.</p>
+                    <h4>Technologies</h4>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <img src="./image/GolandIcon.png" alt="Goland" class="tech-icon">
+                            <p class="tech-label">Goland</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/goIcon.png" alt="Go" class="tech-icon">
+                            <p class="tech-label">Go</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/VisualStudioIcon.png" alt="VisualStudio" class="tech-icon">
+                            <p class="tech-label">Visual Studio</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/ReactIcon.png" alt="React" class="tech-icon">
+                            <p class="tech-label">React js</p>
+                        </div>
+                    </div>                    
+                    <a href="https://github.com/BrayanD17/post-card-generator" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <img src="./image/GymHubIcon.png" alt="Gym Hub Icon" class="project-image">
+                <div class="project-content">
+                    <h3>Gym Hub</h3>
+                    <p>This project is an administrative system for gyms. It is a complete system</p>
+                    <p> that manages users, makes training plans and several other functionalities.</p>
+                    <h4>Technologies</h4>
+                    <div class="technologies">
+                        <div class="tech-item">
+                            <img src="./image/FireBaseIcon.png" alt="Firebase" class="tech-icon">
+                            <p class="tech-label">Firebase</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/VisualStudioIcon.png" alt="VisualStudio" class="tech-icon">
+                            <p class="tech-label">Visual studio</p>
+                        </div>
+                        <div class="tech-item">
+                            <img src="./image/ReactIcon.png" alt="React" class="tech-icon">
+                            <p class="tech-label">React js</p>
+                        </div>
+                    </div>                    
+                    <a href="https://github.com/BrayanD17/gym-project" target="_blank" class="project-link">View on GitHub</a>
+                </div>
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about-section" class="about-section">
+            <h2>About me</h2>
+            <p class="bio">
+                I am a student passionate about technology with a strong background in computer engineering, currently studying at TEC. 
+                I am particularly interested in software development, especially in the web sector, as I am drawn to frameworks like React.js and Angular, 
+                as well as essential tools such as HTML, CSS, and JavaScript. However, throughout my career, I have encountered a multitude of languages, 
+                programming paradigms, database management systems, and a variety of tools that are necessary for those who love computing. 
+                In addition to technology, I also have proficiency in English as a second language, which is indispensable today since the market and the development of new technologies are primarily conducted in this language.
+            </p>
+
+            <div class="skills">
+                <h3>Technical Skills</h3>
+                <ul class="technical-skills">
+                    <li>
+                        <span class="skill-label">HTML</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 90%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">CSS</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 85%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">JavaScript</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 80%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">React.js</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 75%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">Python</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 70%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">Firebase</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 65%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">SQL Server</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 60%;"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="skill-label">Java</span>
+                        <div class="skill-bar">
+                            <div class="skill-level" style="width: 55%;"></div>
+                        </div>
+                    </li>
+                    <!-- Add more skills as needed -->
+                </ul>
+                
+                <h3>Social Skills</h3>
+                <ul class="social-skills">
+                    <li>Teamwork</li>
+                    <li>Critical Thinking</li>
+                    <li>Innovation and Creativity</li>
+                    <li>Resilience and Adaptability</li>
+                    <li>Mentoring and Coaching</li>
+                    <li>Diversity Management</li>
+                    <!-- Add more social skills as needed -->
+                </ul>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact-section" class="contact-section">
+            <h2>Contact me</h2>
+            <div class="contact-info">
+                <div class="contact-details">
+                    <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/50683340869" target="_blank">+506 8334 0869</a></p>
+                    <p>
+                        <img src="./image/GmailIcon.png" alt="Gmail Icon" class="gmail-icon"/>
+                        <a href="mailto:dinartebryan17@gmail.com">dinartebryan17@gmail.com</a>
+                    </p>                    
+                    <p><i class="fas fa-map-marker-alt"></i> San Carlos, Alajuela, Costa Rica</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/in/brayan-josue-gutierrez-dinarte-280441165/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/BrayanD17" target="_blank" class="github"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/brayan.dinarte.1?locale=es_LA" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/dinartebrayan/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+                    <!-- Añade más enlaces sociales según sea necesario -->
+                </div>
+            </div>
+            <div class="map-container">
+                <p>Job Search in Costa Rica, USA, and Canada:</p>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126919.08346757808!2d-84.1856691356588!3d9.934739497353929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0fa6d7ae5013b%3A0x29f6c9142d9a1930!2sSan%20Jos%C3%A9%2C%20Costa%20Rica!5e0!3m2!1sen!2ses!4v1693674137648!5m2!1sen!2ses" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d315186.8132386218!2d-97.81754561168948!3d30.26715341461207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644bf36aa2cde79%3A0xd5159f20cb7336c5!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2ses!4v1693674309123!5m2!1sen!2ses" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.556944115837!2d-79.383186449454!3d43.651070915338565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34cb4471b9d3%3A0x67d60b7db88cfb1!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2ses!4v1693674406731!5m2!1sen!2ses" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
