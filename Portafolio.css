@@ -305,53 +305,46 @@ nav {
     margin: 0 auto 2em; /* Center and add spacing below */
     text-align: justify;
 }
-
-.skills h3 {
-    font-size: 1.5em;
-    margin-top: 1.5em;
-    color: #444;
-    text-align: center;
-}
-
-.technical-skills,
-.social-skills {
-    list-style-type: none;
-    padding: 0;
-    margin: 1em 0;
-}
-
-.technical-skills li,
-.social-skills li {
+/* Estilos para los íconos de habilidades técnicas */
+.skill-icons {
     display: flex;
-    align-items: center;
-    margin-bottom: 0.5em;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-icon {
+    text-align: center;
+    max-width: 100px;
+}
+
+.skill-icon img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.skill-icon p {
+    margin: 5px 0;
     font-size: 1em;
-    color: #444;
-}
-
-.skill-label {
-    flex: 1;
-    font-weight: bold;
-}
-
-.skill-bar {
-    background-color: #ddd;
-    border-radius: 5px;
-    overflow: hidden;
-    height: 10px;
-    width: 60%;
-}
-
-.skill-level {
-    height: 100%;
-    background-color: #6c63ff;
-}
-
-.social-skills li {
-    font-size: 1em;
-    margin-left: 1.2em;
     color: #333;
 }
+
+.cv-preview {
+    margin-top: 2em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.cv-preview iframe {
+    width: 100%;
+    height: 600px; /* Ajusta la altura según sea necesario */
+    border: none;
+}
+
 
 /* Estilos generales para la sección de contacto */
 .contact-section {
@@ -486,4 +479,114 @@ nav {
     height: 24px;
     margin-right: 10px; /* Espacio entre el ícono y el texto */
     vertical-align: middle; /* Alinea verticalmente el ícono con el texto */
+}
+/* Estilos para la sección de Blog */
+.blog-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.blog-posts {
+    width: 100%; 
+    max-width: 1000px; 
+    margin: 0 auto; 
+    padding: 0; 
+}
+
+.blog-post {
+    border-bottom: 1px solid #ddd;
+    padding: 15px 0; 
+    display: flex;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.blog-icon {
+    margin-right: 15px;
+}
+
+.blog-icon .icon {
+    width: 50px; /* Ajusta el tamaño del ícono según sea necesario */
+    height: auto;
+}
+
+.blog-post h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color: #333;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.blog-date {
+    font-size: 0.9em;
+    color: #777;
+}
+
+.blog-excerpt {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #555;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .blog-posts {
+        padding: 0 10px;
+    }
+
+    .blog-post {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .blog-icon .icon {
+        width: 40px;
+    }
+
+    .blog-post h3 {
+        font-size: 1.2em;
+    }
+
+    .blog-date {
+        font-size: 0.8em;
+    }
+
+    .blog-excerpt {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    .blog-posts {
+        padding: 0 5px;
+    }
+
+    .blog-post {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .blog-icon .icon {
+        width: 30px;
+    }
+
+    .blog-post h3 {
+        font-size: 1em;
+    }
+
+    .blog-date {
+        font-size: 0.7em;
+    }
+
+    .blog-excerpt {
+        font-size: 0.8em; 
+    }
 }
